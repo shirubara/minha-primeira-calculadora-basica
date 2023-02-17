@@ -1,0 +1,38 @@
+nome = input('Qual é o seu nome? \n')
+print('Ola {}, seja bem vindo(a)!'.format(nome))
+print('Aqui você consegue fazer algumas operações matematicas!')
+print('Qual tipo de operação gostaria de fazer? As operações disponiveis são:  ')
+print('Soma, Subtração, Multiplicação, Divisão, Exponenciação')
+dec_1 = input('Qual dessas operações deseja fazer? \n')
+if dec_1 == 'soma':
+    print('Vamos somar!')
+    n_soma = int(input('Digite o primeiro numero:'))
+    n_soma2 = int(input('Digite o numero que quer somar ao primeiro numero: '))
+    s_soma = n_soma + n_soma2
+    print('O resultado de {} somado a {} resulta em {}!'.format(n_soma, n_soma2, s_soma))
+elif dec_1 == 'subtração':
+    print('Vamos subtrair!')
+    n_sub = int(input('Digite o primeiro numero: '))
+    n_sub2 = int(input('Digite o numero que quer somar ao primeiro numero: '))
+    s_sub = n_sub - n_sub2
+    print('O resultado de {} subtraido por {} resulta em {}!'.format(n_sub, n_sub2, s_sub))
+elif dec_1 == 'multiplicação':
+    print('Vamos multiplicar!')
+    n_mult = int(input('Digite o primeiro numero: '))
+    n_mult2 = int(input('Digite o numero que quer multiplicar ao primeiro numero: '))
+    s_mult = n_mult * n_mult2
+    print('O resultado de {} multiplicado a {} resulta em {}!'.format(n_mult, n_mult2, s_mult))
+elif dec_1 == 'divisão':
+    print('Vamos dividir!')
+    n_div = int(input('Digite o primeiro numero: '))
+    n_div2 = int(input('Digite o numero que quer multiplicar ao primeiro numero: '))
+    s_div = n_div / n_div2
+    print ('O resultado de {} dividido por {} é {}!'.format(n_div, n_div2, s_div))
+elif dec_1 == 'exponenciação':
+    print('Vamos a exponenciação!')
+    n_exp = int(input('Digite o primeiro numero: '))
+    n_exp2 = int(input('Digite o numero que quer multiplicar ao primeiro numero: '))
+    s_exp = n_exp  ** n_exp2
+    print('O resultado de {} elevado a {} é {}!'.format(n_exp, n_exp2, s_exp))
+elif dec_1 != str:
+    print('isso é um numero ou um simbolo, escreva uma das opções!')
